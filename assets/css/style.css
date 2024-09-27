@@ -1,0 +1,61 @@
+body {
+  background-size: cover;
+  background-image: url("../images/Weather-Desktop-Image.jpg");
+  padding: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card {
+  background-color: whitesmoke;
+  flex-wrap: wrap;
+}
+
+.form-control {
+  background-color: #ecf0f2;
+}
+
+h6 {
+  color: white;
+  font-size: 11px;
+}
+
+.text-center {
+  margin: 10px;
+  padding: 10px;
+}
+.search {
+  background-color: lightblue;
+  border-width: 1px;
+  border-color: grey;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding: 1%;
+  cursor: pointer;
+}
+
+.day-1,
+.day-2,
+.day-3,
+.day-4,
+.day-5 {
+  background-color: #323d4f;
+  color: White;
+  max-width: 100%;
+  margin: 10px;
+  font-size: 11px;
+}
+
+.selected {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: gray;
+  margin: 10px;
+  border-radius: 4px;
+  justify-content: space-around;
+  display: flex;
+}
+
+.selected :hover {
+  background-color: #323d4f;
+  color: white;
+}

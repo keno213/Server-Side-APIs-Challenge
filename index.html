@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+
+  <body>
+    <div class="container">
+
+    <header class="jumbotron bg-dark p-1">
+      <h1 class="display-3 text-light text-center" class="dbheader">Weather Dashboard</h1>
+    </header>
+
+        <!-- Search City form -->
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-4 card" id="searchHistory">
+                    <form class="form-group">
+                        <h2 class="search-term">Search for a City:</h2>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-append">
+                                <button class="btn btn-dark btn-rounded" type="submit" id="searchBtn" data-bs-dismiss="modal">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="previousSearches"></div>
+                </div>
+ 
+        <!--Current City-->
+        <main class="col-md-8 p-4 card">
+            <section>
+                <div class="card CurrentWeather4" style="width: 100%;">
+
+                  <!-- Retrieved data will be dumped here -->
+                        <div class="currentCity ml-2"></div>
+                        <div class="temperature ml-2"></div>
+                        <div class="windSpeed ml-2"></div>
+                        <div class="humidity ml-2"></div>
+                        <div class="uvIndex"></div>
+                        <h6 class="mb-4 ml-2 card" type=text id="uvIndex"> </h6>
+                        <div class="col-md-2 icon"><i id="weatherIcon"></i></div>
+                        </div>
+            </section> 
+
+            <!--Day 5 Forecast-->
+        
+            <section id="forecast">
+                <div class="container"> 
+                    <h3 class="row mt-4 ml-4 mb-4">5-Day Forecast:</h3>
+                        <div class="row mt-8 ml-8 mb-8">
+                            <div class="card-group">
+                                <div class="card col day-1">
+                                    <div class="card-body text-center">
+                                        <!-- Day 1 -->
+                                        <h6 id="day1Forecast"></h6>
+                                        <div class="row"><i id="day1Icon"></i></div>
+                                        <text class="row" id="day1Temperature"> </text>
+                                        <text class="row" id="day1Wind"> </text>
+                                        <text class="row" id="day1Humidity"> </text> 
+                                    </div>
+                                </div>
+                                <div class="card col day-2">
+                                    <div class="card-body text-center">
+                                        <!-- Day 2 -->
+                                        <h6 id="day2Forecast"></h6>
+                                        <div class="row"><i id="day2Icon"></i></div>
+                                        <text class="row" id="day2Temperature"> </text>
+                                        <text class="row" id="day2Wind"> </text>
+                                        <text class="row" id="day2Humidity"> </text> 
+                                    </div>
+                                </div>
+                                <div class="card col day-3">
+                                    <div class="card-body text-center">
+                                    <!-- Day 3 -->
+                                        <h6 id="day3Forecast"></h6>
+                                        <div class="row"><i id="day3Icon"></i></div>
+                                        <text class="row" id="day3Temperature"> </text>
+                                        <text class="row" id="day3Wind"> </text>
+                                        <text class="row" id="day3Humidity"> </text>
+                                    </div>
+                                </div>
+                                <div class="card col day-4">
+                                    <div class="card-body text-center">
+                                    <!-- Day 4 -->
+                                        <h6 id="day4Forecast"></h6>
+                                        <div class="row"><i id="day4Icon"></i></div>
+                                        <text class="row" id="day4Temperature"> </text>
+                                        <text class="row" id="day4Wind"> </text>
+                                        <text class="row" id="day4Humidity"> </text>
+                                    </div>
+                                </div>
+                                <div class="card col day-5">
+                                    <div class="card-body text-center">
+                                    <!-- Day 5 -->
+                                        <h6 id="day5Forecast"></h6>
+                                        <div class="row"><i id="day5Icon"></i></div>
+                                        <text class="row" id="day5Temperature"> </text>
+                                        <text class="row" id="day5Wind"> </text>
+                                        <text class="row" id="day5Humidity"> </text>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </section>    
+        </main>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
+  </body>
+</html>
